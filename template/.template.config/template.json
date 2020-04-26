@@ -1,9 +1,10 @@
 {
-  "author": "Zeljko Bajsanski",
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Zeljko Bajsanski Zeks",
   "classifications": [ "ASP.NET Core" ],
   "name": "Sliced ASP.NET Core",
   "description": "ASP.NET Core application based on sliced architecture",
-  "identity": "Rs.BitsEverywhere.Templates.SlicedArchitecture",
+  "identity": "Rs.BitsEverywhere.Templates.ASP.NET.SlicedArchitecture",
   "shortName": "sliced-webapp",
   "sourceName": "StarterWebApplication",
   "preferNameDirectory": true,
@@ -25,13 +26,15 @@
   ],
   "postActions": [
     {
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
       "condition": "(!skipRestore)",
+      "continueOnError": true,
       "description": "Restore NuGet packages required by this project.",
       "manualInstructions": [
-        { "text": "Run 'dotnet restore'" }
-      ],
-      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
-      "continueOnError": true
+        {
+          "text": "Run 'dotnet restore' in the directory the template was created in."
+        }
+      ]
     }
   ]
 }

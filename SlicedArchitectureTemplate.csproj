@@ -2,14 +2,16 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
-    <PackageId>Rs.BitsEverywhere.Templates.SlicedWebappp</PackageId>
+    <PackageVersion>1.0.0.1</PackageVersion>
+    <PackageId>Rs.BitsEverywhere.Templates.SlicedArchitecture</PackageId>
     <Title>ASP.NET Core based on sliced architecture</Title>
-    <Authors>Zeljko Bajsanski Zeks</Authors>
+    <PackageAuthors>Zeljko Bajsanski Zeks</PackageAuthors>
+	<Authors>Zeljko Bajsanski Zeks</Authors>
+	<Company>BitsEverywhere</Company>
     <Description>Templates to use when creating an ASP.NET Core application based on sliced architecture.</Description>
     <PackageTags>bitseverywhere;ASP.NET Core;sliced architecture</PackageTags>
 
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
@@ -17,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Content Include="template\**\*" Exclude="template\**\bin\**;template\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
