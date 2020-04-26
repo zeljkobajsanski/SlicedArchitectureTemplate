@@ -4,8 +4,8 @@
   "classifications": [ "ASP.NET Core" ],
   "name": "Sliced ASP.NET Core",
   "description": "ASP.NET Core application based on sliced architecture",
-  "identity": "Rs.BitsEverywhere.Templates.ASP.NET.SlicedArchitecture",
-  "shortName": "sliced-webapp",
+  "identity": "BitsEverywhere.Templates.ASP.NET.Core.SlicedArchitecture",
+  "shortName": "aspnet-sliced",
   "sourceName": "StarterWebApplication",
   "preferNameDirectory": true,
   "tags": {

@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0.1</PackageVersion>
-    <PackageId>Rs.BitsEverywhere.Templates.SlicedArchitecture</PackageId>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <PackageId>BitsEverywhere.Templates.ASP.NET.Core.SlicedArchitecture</PackageId>
     <Title>ASP.NET Core based on sliced architecture</Title>
     <PackageAuthors>Zeljko Bajsanski Zeks</PackageAuthors>
 	<Authors>Zeljko Bajsanski Zeks</Authors>
