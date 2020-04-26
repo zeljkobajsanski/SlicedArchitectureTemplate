@@ -1,4 +1,5 @@
 using System.Reflection;
+using AutoMapper;
 using MediatR;
 using MediatR.Extensions.FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,7 @@ namespace StarterWebApplication.Extensions
         public static IServiceCollection AddThirdPartyServices(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddMediatR(Assembly.GetExecutingAssembly());
+            serviceCollection.AddAutoMapper(Assembly.GetExecutingAssembly());
             serviceCollection.AddFluentValidation(new[] {Assembly.GetExecutingAssembly()});
             return serviceCollection;
         }
@@ -24,7 +26,7 @@ namespace StarterWebApplication.Extensions
         {
             serviceCollection.AddDbContext<StarterWebApplicationContext>(builder =>
             {
-                builder.UseSqlite("Data source=StarterWebApplication.db");
+                builder.UseSqlite("Data Source=StarterWebApplicationContext.db");
             });
             return serviceCollection;
         }

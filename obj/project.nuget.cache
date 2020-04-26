@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3Dcow0PEh8Dg5tSo2WTlzCwoeQlAw+51DskoCv2yOojj2bTRokJ5emJENs9255UAg/H2VMbuu9/w2/lO5EVPCQ==",
+  "success": true,
+  "projectFilePath": "/Users/zbajsanski/Development/Projects/SlicedArchitectureTemplate/SlicedArchitectureTemplate.csproj",
+  "expectedPackageFiles": [
+    "/Users/zbajsanski/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/zbajsanski/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
