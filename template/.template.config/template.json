@@ -13,6 +13,7 @@
     "type": "project"
   },
   "defaultName": "SlicedWebApp",
+  "guids": [ "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC", "4500B71A-6697-4D33-9893-61A171542DD2", "430024E8-F538-4843-B147-0D2B650015BE" ],
   "symbols": {
     "skipRestore": {
       "type": "parameter",
