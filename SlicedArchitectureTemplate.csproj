@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <Version>1.0.3-alpha</Version>
     <PackageId>BitsEverywhere.Templates.ASP.NET.Core.SlicedArchitecture</PackageId>
     <Title>ASP.NET Core based on sliced architecture</Title>
     <PackageAuthors>Zeljko Bajsanski Zeks</PackageAuthors>
 	<Authors>Zeljko Bajsanski Zeks</Authors>
 	<Company>BitsEverywhere</Company>
-    <Description>Templates to use when creating an ASP.NET Core application based on sliced architecture.</Description>
+    <Description>Template to use when creating an ASP.NET Core application based on sliced architecture.</Description>
     <PackageTags>bitseverywhere;ASP.NET Core;sliced architecture</PackageTags>
 
     <TargetFramework>netstandard2.1</TargetFramework>

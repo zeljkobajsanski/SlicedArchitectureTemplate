@@ -16,7 +16,10 @@ namespace StarterWebApplication.Infrastructure
 
         public async Task Process(T request, CancellationToken cancellationToken)
         {
-            await _context.Database.BeginTransactionAsync(cancellationToken);
+            if (_context.Database.CurrentTransaction == null)
+            {
+                await _context.Database.BeginTransactionAsync(cancellationToken);
+            }
         }
     }
 }

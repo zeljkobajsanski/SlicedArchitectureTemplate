@@ -16,7 +16,10 @@ namespace StarterWebApplication.Infrastructure
 
         public Task Process(TRequest request, TResponse response, CancellationToken cancellationToken)
         {
-            _context.Database.CommitTransaction();
+            if (_context.Database.CurrentTransaction != null)
+            {
+                _context.Database.CommitTransaction();
+            }
             return Task.CompletedTask;
         }
     }
