@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using StarterWebApplication.Exceptions;
 
 namespace StarterWebApplication.Infrastructure
 {
@@ -9,6 +10,9 @@ namespace StarterWebApplication.Infrastructure
         {
             switch (context.Exception)
             {
+                case StarterWebApplicationException e:
+                    context.Result = new BadRequestObjectResult(e.Message);
+                    break;
                 default:
                     context.Result = new BadRequestObjectResult(context.Exception.Message);
                     break;

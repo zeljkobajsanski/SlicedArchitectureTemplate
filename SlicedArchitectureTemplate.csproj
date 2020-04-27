@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <Version>1.0.3-alpha</Version>
+    <Version>1.0.5</Version>
     <PackageId>BitsEverywhere.Templates.ASP.NET.Core.SlicedArchitecture</PackageId>
     <Title>ASP.NET Core based on sliced architecture</Title>
     <PackageAuthors>Zeljko Bajsanski Zeks</PackageAuthors>
@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="template\**\*" Exclude="template\**\bin\**;template\**\obj\**;template\.idea\**\*" />
+    <Content Include="template\**\*" Exclude="template\**\bin\**;template\**\obj\**;template\.idea\**;template\**\.vs\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
