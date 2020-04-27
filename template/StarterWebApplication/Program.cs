@@ -1,14 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using CommandLine;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using StarterWebApplication.Helpers;
 using StarterWebApplication.Persistence;
 
@@ -18,7 +13,8 @@ namespace StarterWebApplication
     {
         public static void Main(string[] args)
         {
-            CommandLine.Parser.Default.ParseArguments<CommandLineOptions>(args).WithParsed(options =>
+            Console.Title = "StarterWebApplication";
+            Parser.Default.ParseArguments<CommandLineOptions>(args).WithParsed(options =>
             {
                 var host = CreateHostBuilder(args).Build();
                 if (options.MigrateDatabase)

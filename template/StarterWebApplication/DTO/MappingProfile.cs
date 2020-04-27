@@ -1,5 +1,4 @@
 using AutoMapper;
-using StarterWebApplication.Domain;
 
 namespace StarterWebApplication.DTO
 {

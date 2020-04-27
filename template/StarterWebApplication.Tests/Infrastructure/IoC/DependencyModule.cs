@@ -15,7 +15,7 @@ namespace StarterWebApplication.Tests.Infrastructure.IoC
             base.Load(builder);
             var services = new ServiceCollection();
             services.AddCustomServices().AddThirdPartyServices();
-            services.AddScoped<StarterWebApplicationContext>(c =>
+            services.AddScoped(c =>
             {
                 var connection = new SqliteConnection("Data Source=:memory:");
                 connection.Open();
