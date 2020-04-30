@@ -1,15 +1,15 @@
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR.Pipeline;
-using StarterWebApplication.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace StarterWebApplication.Infrastructure
 {
     public class CommitTransactionBehavior<TRequest, TResponse> : IRequestPostProcessor<TRequest, TResponse>
     {
-        private readonly StarterWebApplicationContext _context;
+        private readonly DbContext _context;
 
-        public CommitTransactionBehavior(StarterWebApplicationContext context)
+        public CommitTransactionBehavior(DbContext context)
         {
             _context = context;
         }

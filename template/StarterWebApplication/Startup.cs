@@ -45,6 +45,10 @@ namespace StarterWebApplication
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+            // Open API
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }

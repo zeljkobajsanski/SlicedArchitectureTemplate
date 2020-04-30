@@ -19,6 +19,18 @@ namespace StarterWebApplication.Extensions
             serviceCollection.AddMediatR(Assembly.GetExecutingAssembly());
             serviceCollection.AddAutoMapper(Assembly.GetExecutingAssembly());
             serviceCollection.AddFluentValidation(new[] {Assembly.GetExecutingAssembly()});
+
+            // Open API
+            serviceCollection.AddSwaggerDocument(config =>
+            {
+                config.PostProcess = document =>
+                {
+                    document.Info.Version = "v1";
+                    document.Info.Title = "StarterWebApplication";
+                    document.Info.Description = "StarterWebApplication ASP.NET Core web API";
+                    document.Info.TermsOfService = "None";
+                };
+            });
             return serviceCollection;
         }
 
@@ -28,6 +40,7 @@ namespace StarterWebApplication.Extensions
             {
                 builder.UseSqlite("Data Source=StarterWebApplicationContext.db");
             });
+            serviceCollection.AddScoped<DbContext, StarterWebApplicationContext>();
             return serviceCollection;
         }
     }
